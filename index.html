@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="車のプロモーションサイトです。">
+    <title>KHCS　車のプロモーションサイト</title>
+    <script src="js/jquery-3.5.1.min.js"></script>
+    <script src="js/bootstrap.bundle.min.js"></script>
+    <link rel="stylesheet" href="https://unpkg.com/ress/dist/ress.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Serif+JP&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/bootstrap.min.css">    
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <header>
+        <nav class="navbar navbar-expand-md navbar-dark">
+            <a href=""><img src="images/logo.png" alt="会社のロゴ" class="navbar-brand img-fluid d-md-none logo"></a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#menu" aria-controls="menu">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <ul class="navbar-nav nav-justified collapse navbar-collapse" id="menu">
+                <li class="nav-item for-li"><a href="" class="nav-link text-light">TOP</a></li>
+                <li class="nav-item for-li"><a href="" class="nav-link text-light">PERFORMANCE</a></li>
+                <li class="nav-item for-none"><a href=""><img src="images/logo.png" alt="会社のロゴ" class="navbar-brand img-fluid mt-2 logo"></a></li>
+                <li class="nav-item for-li"><a href="" class="nav-link text-light">SUPPORT</a></li>
+                <li class="nav-item for-li"><a href="" class="nav-link text-light">CONTACT</a></li>
+            </ul>
+        </nav>
+    </header>
+    <div class="main">
+        <div class="car-wrapper">
+            <p class="vertical for-none"> ©️ KAITO HIRABARA All rights reserved.</p>
+            <div>
+                <img src="images/car.jpg" alt="車の写真" class="img-fluid">
+                <div class="container mt-5">
+                    <div class="row justify-content-center">
+                        <div class="col-md-6">
+                            <h1 class="promotion">　 最高の走りを。</h1>
+                        </div>
+                        <div class="col-md-4">
+                            <a href="" class="nav-link text-light look">詳細を見る</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="wrapper1">
+        <div class="container">
+            <div class="row car-life-wrapper">
+                <div class="col-md-5 for-none align-self-center fadein dly2">
+                    <h3 class="text-center">キャッチフレーズ</h3>
+                    <p class="text-center">テキストテキストテキストテキスト<br>テキストテキストテキストテキスト</p>
+                </div>
+                <div class="col-md-7 car-life fadein dly1">
+                    <img src="images/w-car.jpg" alt="車の写真" class="img-fluid w-car">
+                </div>
+                <div class="col-md-4 d-md-none text-wrapper text-center fadein">
+                    <h3>キャッチフレーズ</h3>
+                    <p>テキストテキストテキストテキスト<br>テキストテキストテキストテキスト</p>
+                </div>
+            </div>
+            <div class="row video-wrapper">
+                <div class="col-md-7 fadein">
+                    <video src="images/drive.mp4" class="video img-fluid" controls></video>
+                </div>
+                <div class="col-md-5 text-wrapper text-center align-self-center fadein">
+                    <h3 class="text-center">キャッチフレーズ</h3>
+                    <p class="text-center">テキストテキストテキストテキスト<br>テキストテキストテキストテキスト</p>
+                </div>
+            </div>
+
+            <div class="row wrapper2">
+                <div class="col-md-2 col-sm-4 col-6 cln text-center">
+                    <a href=""><img src="images/details.png" alt="タイヤのアイコン"></a>
+                    <p>Details</p>
+                </div>
+                <div class="col-md-2 col-sm-4 col-6 cln text-center">
+                    <a href=""><img src="images/repair.png" alt="修理のアイコン"></a>
+                    <p>Repair</p>
+                </div>
+                <div class="col-md-2 col-sm-4 col-6 cln text-center align-self-center">
+                    <a href=""><img src="images/mail.png" alt="メールのアイコン"></a>
+                    <p>Mail</p>
+                </div>
+                <div class="col-md-2 col-sm-4 col-6 cln text-center align-self-center">
+                    <a href=""><img src="images/feedback.png" alt="人のアイコン"></a>
+                    <p>Feedback</p>
+                </div>
+                <div class="col-md-2 col-sm-4 col-6 cln text-center align-self-center">
+                    <a href=""><img src="images/store.png" alt="ピンのアイコン"></a>
+                    <p>Store</p>
+                </div>
+                <div class="col-md-2 col-sm-4 col-6 cln text-center align-self-center" style="border: none;">
+                    <a href=""><img src="images/customercenter.png" alt="カスタマーセンターのアイコン"></a>
+                    <p>Customer Center</p>
+                </div>
+            </div>
+        </div>
+
+        <footer class="d-sm-none">
+            <div>
+                <p class="r-vertical"> ©️ KAITO HIRABARA All rights reserved.</p>
+            </div>
+        </footer>
+    </div>
+    <script>
+        $(function(){
+                $(window).scroll(function (){
+                $('.fadein').each(function(){
+                var elemPos = $(this).offset().top;
+                var scroll = $(window).scrollTop();
+                var windowHeight = $(window).height();
+                if (scroll > elemPos - windowHeight){
+                    $(this).addClass('scrollin');
+                }
+            });
+        });
+    });
+    </script>
+</body>
+</html> 

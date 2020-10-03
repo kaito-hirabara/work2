@@ -1,0 +1,152 @@
+@charset "UTF-8";
+/* ----------------------　共通部分 ----------------------- */
+body {
+    font-family: 'Noto Serif JP', serif;
+    line-height: 1.7;
+    letter-spacing: 2px;
+}
+a, p, h1, h2, h3 {
+    color: white;
+}
+/* ---------------------- メイン ----------------------- */
+header {
+    background-color: black;
+    padding: 0 20px 0 30px;
+}
+.logo {
+    width: 150px;
+}
+.for-li a{
+    font-size: 0.9rem;
+    margin: 0 30px;
+}
+.main {
+    background-color: black;
+    padding-bottom: 50px;
+}
+.car-wrapper {
+    display: flex;
+    text-align: center;
+    padding-top: 5%;
+}
+.car-wrapper img {
+    width: 70%;
+    height: 80%;
+    max-width: 70%;
+}
+.promotion {
+    color: white;
+    display: inline-block;
+    letter-spacing: 4px;
+    margin-right: 5%;
+}
+.look {
+    border: 1px white solid;
+    padding: 10px 50px;
+    display: inline-block;
+    margin-top: 10px;
+}
+.vertical {
+    writing-mode: vertical-rl;
+    font-size: 0.4rem;
+    color: white;
+    display: inline;
+    margin: 20% 0 0 1%;
+}
+.wrapper1 {
+    background-color: black;
+    padding-top: 10%;
+}
+.fadein {
+	opacity : 0;
+	transform : translate(0, 100px);
+	transition : all 800ms;
+}
+.fadein.scrollin {
+	opacity : 1;
+	transform : translate(0, 0);
+}
+.dly1 {
+	-moz-transition-delay:100ms;
+	-webkit-transition-delay:100ms;
+	-o-transition-delay:100ms;
+	-ms-transition-delay:100ms;
+}
+.dly2 {
+	-moz-transition-delay:400ms;
+	-webkit-transition-delay:400ms;
+	-o-transition-delay:400ms;
+	-ms-transition-delay:400ms;
+}
+.w-car,
+.video {
+    height: 400px;
+    width: 100%;
+}
+.video-wrapper {
+    margin-top: 8%;
+} 
+.wrapper2 {
+    margin-top: 10%;
+    padding-bottom: 8%;
+}
+.cln {
+    border-right: 1px #fff solid;
+    padding-top: 1%;
+}
+.cln img {
+    width: 40px;
+}
+.cln p {
+    margin-top: 8%;  
+    font-size: 0.7rem;
+}
+/* ------------------　レスポンシブ（タブレット＆スマホ） ----------------- */
+@media screen and (max-width: 768px) {
+    * {
+        position: static;
+        top: 0;
+        left: 0;
+        border: none;
+    }
+    a, p {
+        font-size: 0.7rem;
+    }
+    .for-none {
+        display: none;
+    }
+    header {
+        padding: 0;
+    }
+    .logo {
+        width: 80px;
+    }
+    .car-wrapper img {
+        height: auto;
+        padding: 15% 0;
+    }
+    .promotion {
+        font-size: 1.5rem;
+        margin: 0;
+    }
+    .look {
+        padding: 5px 10px;
+        margin-top: 18px;
+    }
+    .r-vertical {
+        font-size: 0.6rem;
+        margin: 0;
+        padding: 0 0 2% 2%;
+    }
+    .w-car,
+    .video {
+        height: auto;
+    }
+    .text-wrapper h3 {
+        padding-top: 10%;
+        font-size: 1.5rem;
+    }
+    .video-wrapper {
+        margin-top: 15%;
+    }
+}
